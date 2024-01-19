@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <script>
+        function mikoSoccerGameMultiply(Soccer, Games) {
+            console.log ("Miko Likes " + Soccer + " & " + Games);
+        }
+        mikoSoccerGameMultiply("Soccer", "Games");
+
+        let mikoMultiply = (a, b) => a * b;
+        console.log(mikoMultiply(9, 10)); 
+
+        let mikoBagi = (a, b) => a / b;
+        console.log(mikoBagi(10, 2));
+
+        function mikoModulus(dividend, divisor, factor1, factor2) {
+            if (divisor === 0) {
+            throw new Error("Division by zero is not allowed.");
+        }
+
+            const result = ((dividend % divisor) + divisor) % divisor;
+            return result * factor1 % factor2;
+    }
+
+// Example usage:
+            const result = mikoModulus(10, 3, 2, 5);
+            console.log(result); // Output: 2
+
+            const mikoSoccerGameMultiply = (Soccer, Games) => {
+            console.log("Miko Likes " + Soccer + " & " + Games);
+        };
+            mikoSoccerGameMultiply("Soccer", "Games");
+
+            const mikoMultiply = (a, b) => a * b;
+            console.log(mikoMultiply(9, 10));
+
+            const mikoBagi = (a, b) => a / b;
+            console.log(mikoBagi(10, 2));
+
+            const mikoModulus = (dividend, divisor, factor1, factor2) => {
+                if (divisor === 0) {
+                    throw new Error("Division by zero is not allowed.");
+            }
+
+                const result = ((dividend % divisor) + divisor) % divisor;
+                return result * factor1 % factor2;
+        };
+
+            
+            const result = mikoModulus(10, 3, 2, 5);
+            console.log(result); // Output: 2
+
+            //Anonymous functions
+
+            const mikoFavoriteFood = function(food) {
+                console.log(`Miko loves to eat ${food}!`);
+        };
+
+            
+            mikoFavoriteFood("sushi");
+
+            
+            const mikoFavoriteHobby = "I love photography globally.";
+                function mikoGlobalScopeFunction() {
+                console.log(mikoFavoriteHobby);
+            }
+
+            
+            mikoGlobalScopeFunction();
+           
+
+            function mikoLocalScopeFunction() {
+                const mikoPersonalGoal = "I have a personal goal in this local scope.";
+                console.log(mikoPersonalGoal);
+            }
+
+            mikoLocalScopeFunction();
+
+</script>
+</body>
+</html>
