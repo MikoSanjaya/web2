@@ -56,7 +56,29 @@
 
         mikoOuter(2);
 
-        
+        //Traditional function
+        function mikoMultiply(a, b) {
+            return a * b;
+        }
+
+        console.log(mikoMultiply(9, 10));
+
+
+        //arrow function
+        let mikoKali = (a, b) => a * b;
+
+        console.log(mikoKali(9, 10));
+
+        //Traditional to Arrow
+        //function helloFunction(name) {
+        //    console.log('Hi,' + name);
+        //}
+
+
+
+        let helloFunction = name => "Hi," + name;
+
+        console.log(helloFunction("Miko"));
 
     </script>
 </body>
