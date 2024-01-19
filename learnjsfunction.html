@@ -31,7 +31,32 @@
         }
 
         let resultMikoSum = mikoSum(1, 2, 3, 4);
-        console.log(resultMikoSum)
+        console.log(resultMikoSum);
+
+        console.log(mikoSum(5, 6, 7, 8));
+
+        let y = 3;
+        function mikoScope(x) {
+            let y = x + 1;
+            return y;
+        }
+
+        let resultScope = mikoScope(20);
+        console.log(resultScope);
+        console.log(y);
+            //console.log(x);
+
+        function mikoOuter(i) {
+            let y = i + 2;
+            function mikoInner() {
+                console.log(y)
+            }
+            mikoInner();
+        }
+
+        mikoOuter(2);
+
+        
 
     </script>
 </body>
