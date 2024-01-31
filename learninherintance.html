@@ -20,6 +20,23 @@
         let catfish = new Animal("Murph");
         console.log(catfish.name);
         console.log(catfish.speak());
+
+        class Cat extends Animal {
+            constructor(name, breed) {
+                super(name);
+                this.breed = breed;
+            }
+
+            meow() {
+            console.log(this.name + " meows");
+            }
+        }
+
+        let nip = new Cat("MrFresh", "Ginger");
+        console.log(nip.name);
+        console.log(nip.breed);
+        console.log(nip.meow());
+
     </script>
 </body>
 </html>
