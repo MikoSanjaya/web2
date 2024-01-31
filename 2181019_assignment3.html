@@ -8,44 +8,54 @@
 <body>
     <script>
 
-        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek"]
+        //split
+        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek", "SPLIT"]
         miko2181019Foods.push("Lele bakar");    
         console.log(miko2181019Foods);
 
-        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek"]
+        //pop
+        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek", "POP"]
         miko2181019Foods.pop("mango");
         console.log(miko2181019Foods);
 
-        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek"]
+        //shift
+        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek", "SHIFT"]
         miko2181019Foods.shift();
         console.log(miko2181019Foods);
 
-        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek"]
+        //unshift
+        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek", "UNSHIFT"]
         miko2181019Foods.unshift("mango");
         console.log(miko2181019Foods);
 
-        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek"]
+        //slice
+        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek", "SLICE"]
         var subArray = miko2181019Foods.slice(1,2);
         console.log(subArray);
         
-        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek"]
+        //concat
+        var miko2181019Foods = ["mango", "Fried rice", "Ayam geprek", "FOODS"]
         var array1 = ['a', 'b', 'c', 'd', 'e'];
         var array2 = [1, 2, 3, 4, 5];
         var array3 = array1.concat(array2);
         console.log(array3);
 
-        var miko2181019Numbers = [10, 23, 30, 45, 60];
+        //sort
+        var miko2181019Numbers = [10, 23, 30, 45, 60, "SORT"];
         miko2181019Numbers.sort((a, b) => a - b);
         console.log(miko2181019Numbers);
 
-        var miko2181019Fruits = ["mango", "blackberries", "grape", "blueberries", "durian"]
+        //reverse
+        var miko2181019Fruits = ["mango", "blackberries", "grape", "blueberries", "durian", "REVERSE"]
         miko2181019Fruits.reverse();
         console.log(miko2181019Fruits);
 
-        var miko2181019Join = ["mango", "blackberries", "grape", "blueberries", "durian", "Lemon"]
+        //join
+        var miko2181019Join = ["mango", "blackberries", "grape", "blueberries", "durian", "Lemon", "JOIN"]
         var miko2181019Join = miko2181019Join.join(', ');
         console.log(miko2181019Join);
 
+        //split
         var miko2181019Split = "What happened over here?";
         var miko2181019Split = miko2181019Split.split(" ");
         var word = miko2181019Split[1];
