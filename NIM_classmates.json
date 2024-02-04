@@ -1,0 +1,100 @@
+{
+    "classmates": [
+      {
+        "id": "100",
+        "name": "Mikk",
+        "age": 20,
+        "grade": "SEM 6",
+        "favoriteSubject": {
+          "subjectName": "Web 2",
+          "reasonForInterest": "Because I like to torture myself",
+          "favoriteTopic": "JavaScript Array"
+        },
+      
+        "hobbies": [
+          {
+            "hobbyName": "Games",
+            "yearsInvolved": 7,
+            "skillLevel": "mid"
+          }
+        ],
+        "personalGoals": "becoming a pro gamer and engineer"
+      },
+      {
+        "id": "101",
+        "name": "Pipy",
+        "age": 24,
+        "grade": "SEM 2",
+        "favoriteSubject": {
+          "subjectName": "Accounting ",
+          "reasonForInterest": "She likes to count",
+          "favoriteTopic": "Graphs"
+        },
+        "hobbies": [
+          {
+            "hobbyName": "Eating mangoes",
+            "yearsInvolved": "since birth",
+            "skillLevel": "professional"
+          }
+        ],
+        "personalGoals": "Becoming a successful woman"
+      },
+      {
+        "id": "102",
+        "name": "Andruw",
+        "age": 19,
+        "grade": "SEM 2",
+        "favoriteSubject": {
+          "subjectName": "Management ",
+          "reasonForInterest": "Because he's confused about what to take",
+          "favoriteTopic": "Marketing"
+        },
+        "hobbies": [
+          {
+            "hobbyName": "Laying around in bed all day",
+            "yearsInvolved": "all his life",
+            "skillLevel": "extremely skillful"
+          }
+        ],
+        "personalGoals": "To be rich"
+      },
+      {
+        "id": "103",
+        "name": "William",
+        "age": 22,
+        "grade": "SEM 3",
+        "favoriteSubject": {
+          "subjectName": "Management ",
+          "reasonForInterest": "because he's really good at sales",
+          "favoriteTopic": "sales marketing"
+        },
+        "hobbies": [
+          {
+            "hobbyName": "Coffee",
+            "yearsInvolved": 3,
+            "skillLevel": "his tongue is partially dead"
+          }
+        ],
+        "personalGoals": "Becoming a successful salesman"
+      },
+      {
+        "id": "104",
+        "name": "Audrey",
+        "age": 20,
+        "grade": "SEM 3",
+        "favoriteSubject": {
+          "subjectName": "Physiotheraphy ",
+          "reasonForInterest": "she's intrested in human bodies",
+          "favoriteTopic": "X-Rays"
+        },
+        "hobbies": [
+          {
+            "hobbyName": "hanging out",
+            "yearsInvolved": 2,
+            "skillLevel": "Intermediate"
+          }
+        ],
+        "personalGoals": "Being a professional doctor"
+      }
+    ]
+  }

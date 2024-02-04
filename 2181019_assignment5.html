@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 5</title>
+    </head>
+    <body>
+        <script>
+            fetch('2282032_classmates.json')
+              .then(response => response.json())
+              .then(data => {
+                displayClassmateData(data.classmates);
+              })
+              .catch(error => console.error(error));
+        
+            function displayClassmateData(classmates) {
+              classmates.forEach(classmate => {
+                console.log('Name:', classmate.name);
+                console.log('ID:', classmate.id);
+                console.log('Age:', classmate.age);
+                console.log('Grade:', classmate.grade);
+                console.log('Favorite Subject:', classmate.favoriteSubject.subjectName);
+                console.log('Reason for Interest:', classmate.favoriteSubject.reasonForInterest);
+                console.log('Favorite Topic:', classmate.favoriteSubject.favoriteTopic);
+                console.log('Hobbies:');
+                classmate.hobbies.forEach(hobby => {
+                  console.log('- ' + hobby.hobbyName + ' (Years: ' + hobby.yearsInvolved + ', Skill Level: ' + hobby.skillLevel + ')');
+                });
+                console.log('Personal Goals:', classmate.personalGoals);
+                console.log('---');
+              });
+            }
+          </script>
+    </body>
+
+</html>
