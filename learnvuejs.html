@@ -7,10 +7,22 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <div class="app"></div>
+    <div id="app">{{ message }} from {{ name }}. I am {{ age }} years old. My favourite fruits are: {{ fruits }}
+    </div>
 
     <script>
-        
+        const { createApp } = Vue
+
+        createApp({
+            data() {
+                return {
+                    message: 'Hello Vue!',  
+                    name: 'mik',
+                    age: '20',
+                    fruits: ['mango', 'apple', 'lemon', 'grapes']     
+                }
+            }
+        }).mount('#app')
     </script>
 </body>
 </html>
