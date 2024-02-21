@@ -7,7 +7,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <div id="app">{{ message }} from {{ name }}. I am {{ age }} years old. My favourite fruits are: {{ fruits }}
+    <div id="app">{{ message }} from {{ name }}. I am {{ age }} years old.<br> My favourite fruits are: {{ fruits }}.<br> His profile {{ person }}
     </div>
 
     <script>
@@ -19,7 +19,11 @@
                     message: 'Hello Vue!',  
                     name: 'mik',
                     age: '20',
-                    fruits: ['mango', 'apple', 'lemon', 'grapes']     
+                    fruits: ['mango', 'apple', 'lemon', 'grapes'],
+                    person: {
+                        names: 'miko',
+                        age: '20'
+                    }
                 }
             }
         }).mount('#app')
