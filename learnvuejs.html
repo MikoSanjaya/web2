@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning VueJS</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <div id="app">{{ message }} from {{ name }}. I am {{ age }} years old.<br> My favourite fruits are: {{ fruits }}.<br> His profile {{ person }}
+    <div id="app">{{ message }} from {{ name }}. I am {{ age }} years old.
+        <br> My favourite fruits are: {{ fruits }}.
+        <br> His profile {{ person }}
+        <br><br>Text message: <input type="text" v-model="textMessage">
+        <h3>{{ textMessage }} </h3>
+        Name: <input type="text" v-model="name">
+
+        <h2 v-if="on">bye</h2>
+        <h2 v-else>hi</h2>
+
+        Age: <input type="text" v-model="age">
+
+        <h3 v-if="age <= 17">You're young.</h3>
+        <h3 v-else>You're old.</h3>
+
+        <br>
+        <hr>
+        <h2 v-bind:class="textColor">Title</h2>
+
+        hobbies:
+        <li v-for="fruits in fruits">
+            {{ fruits }}
+        </li>
     </div>
 
     <script>
@@ -16,6 +43,13 @@
         createApp({
             data() {
                 return {
+                    products: [
+                        {name: 'iphone 12', price: 200},
+                        {name: 'samsung', price: 300}
+                    ],
+                    textColor: 'red',
+                    on: 'false',
+                    textMessage: '',
                     message: 'Hello Vue!',  
                     name: 'mik',
                     age: '20',
